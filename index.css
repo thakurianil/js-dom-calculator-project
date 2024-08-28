@@ -1,0 +1,109 @@
+:root {
+    --btn-background-color: brown;
+    --btn-hover-background-color: lightblue;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ede2dbcb;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-height: fit-content;
+    background: #0f0f0f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.display1 {
+    grid-column: span 4;
+    background: #333333c5;
+
+    color: gray;
+    padding: 20px;
+    font-size: 1em;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.display {
+    grid-column: span 4;
+    background: #333333c5;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.btn {
+    background: lightcyan;
+    box-shadow: 2px 1px 2px 0px rgba(249, 249, 249, 0.75);
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--btn-hover-background-color);
+    transform: scale(1.05);
+}
+
+.btn-AC {
+    background: var(--btn-background-color);
+    color: white;
+}
+
+.btn-C {
+    background: var(--btn-background-color);
+    color: white;
+}
+
+.btn-modulus {
+    background: var(--btn-background-color);
+    color: white;
+}
+
+.btn-divide {
+    background: var(--btn-background-color);
+
+    color: white;
+}
+
+.btn-multiply {
+    background: var(--btn-background-color);
+    color: white;
+}
+
+.btn-minus {
+    background: var(--btn-background-color);
+    color: white;
+}
+
+.btn-plus {
+    background: var(--btn-background-color);
+    color: white;
+}
+
+.btn-equal {
+    background: var(--btn-background-color);
+    color: white;
+}
+
+.btn-0 {
+    grid-column: span 2;
+    border-radius: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
